@@ -1,24 +1,18 @@
-#return
-  {
-  float: right;
-  }
-#home
+#showCarte
 {
-  float: left;
+	float: right;
+}
+#basket
+{
+    float: right;
+}
+#output
+{
+    float: right;
 }
 .baskets
 {
-        float: right;
-}
-
-.payement {
-    margin-bottom: 1px;
-    margin-left: 500px;
-    width: 501px;
-    height: 500px;
-    position: fixed;
-    bottom: 0;
-}
+		float: right;
 }
 ul {
   list-style-type: none;
@@ -26,7 +20,7 @@ ul {
   padding: 30px;
   padding-left: 50px;
   display: inline-flex;
- 
+  
 }
 .io {
     margin-right: 60px;
@@ -41,24 +35,26 @@ ul {
   background-color: RoyalBlue;
 }
 #carte {
-    float: right;
-    width: 500px;
-    padding-right: 0px;
-    border: 2px solid black;
+	float: right;
+	width: 500px;
+	padding-right: 0px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+
+.topBar {
+	display: grid;
+}
+
+h1{
+	
     text-align: center;
 }
-h2,
-h4 { 
-  font-family: "Abril Fatface", serif;
-}
 
-h2 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 100px;
-  margin: 0 0 30px 0;
+p{
+	text-align: center;
 }
-
 
 body{
  
@@ -68,4 +64,3 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-  

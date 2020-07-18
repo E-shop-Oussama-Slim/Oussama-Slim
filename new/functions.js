@@ -1,5 +1,4 @@
 function Products(image, description, price){
-<<<<<<< HEAD
   this.image = image;
   this.description = description;
   this.price = price;
@@ -7,13 +6,6 @@ function Products(image, description, price){
 Products.prototype.getPrice = function(category) {  
    return this.price;
 };
-=======
-	this.image = image;
-	this.description = description;
-	this.price = price;
-
-
->>>>>>> 0a549a6c481b2ca813a56ec154736da962220433
 var productsMen = [ 
 new Products('men1.jpg', 'Grey T-shirt', 17 ),
 new Products('men2.jpg', 'White T-shirt', 25 ),
@@ -108,9 +100,4 @@ function sum(num) {
       var price = document.getElementByClass("tot").innerHTML;
       var y = parseInt(price) + parseInt(num)
       document.getElementById("p1").innerHTML = y
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 0a549a6c481b2ca813a56ec154736da962220433
