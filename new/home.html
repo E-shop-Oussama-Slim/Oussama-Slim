@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <title></title>
+</head>
+<body>
+
+
+<header class="topBar">
+    <ul>
+    <button class="io" type="submit" id="home"  ><i class="fa fa-home"></i>Home</button>
+    <li class="io" id="categ1"id="categMen" onclick="generate(productsMen)">Men</li>
+    <li class="io" id="categ2" id="categWomen" onclick="generate(productsWomen)">Women</li>
+    <li class="io" id="categ3" id="categChildren" onclick="generate(productsChildren)">Children</li>
+  </ul>
+
+
+   
+  </header>
+  <div class="desc">
+    <h1>Welcome to The Shop</h1>
+    <p>This is an e-shop template</p>
+  </div>
+  
+  <button class="io" id="basket" onclick="loadBasket()">Buy</button>
+  <button class="io" id="showCarte" onclick="display();"><i class="fa fa-folder"></i></button>
+  <div class="baskets"> 
+  <button class="io" id="cancel" onclick="reset();del();createItem(); cretItem();"><i class="fa fa-close"></i></button>
+  <output class="io" id="output">0</output>
+  </div>
+  <aside id="carte"> </aside>
+  <div class="specificCateg">
+    <div class="menProd">
+      <img style="height: 185px; padding: 20px 580px "  id="img0" src="">
+      <p id="desc0" style="margin-left: 32px;">desc</p>
+      <p id="price0" style="margin-left: 31px;">price</p>
+      <button id="btn0" style="margin-left: 640px;">add to cart</button>
+    </div>
+    <div class="menProd">
+      <img style="height: 185px; padding: 20px 580px "  id="img1" src="">
+      <p id="desc1" style="margin-left: 32px;">desc</p>
+      <p id="price1" style="margin-left: 31px;">price</p>
+      <button id="btn1" style="margin-left: 640px;">add to cart</button>
+    </div>
+    <div class="menProd">
+      <img style="height: 185px; padding: 20px 580px "  id="img2" src="">
+      <p id="desc2" style="margin-left: 32px;">desc</p>
+      <p id="price2" style="margin-left: 31px;">price</p>
+      <button id="btn2" style="margin-left: 640px;">add to cart</button>
+    </div>
+    <div class="menProd">
+      <img style="height: 185px; padding: 20px 580px "  id="img3" src="">
+      <p id="desc3" style="margin-left: 32px;">desc</p>
+      <p id="price3" style="margin-left: 31px;">price</p>
+      <button id="btn3" style="margin-left: 640px;">add to cart</button>
+    </div>
+  </div> 
+ <!-- <div class=""> 
+  <button id="categMen" onclick="generate(productsMen)">Men</button>
+    <button id="categWomen" onclick="generate(productsWomen)">Women</button>
+    <button id="categChildren" onclick="generate(productsChildren)">Children</button>
+  </div>-->
+  <footer class="bottomBar">
+    <div id="contact"></div>
+    <div id="social">
+      <!-- icons -->
+    </div>
+  </footer>
+<script>
+   if(typeof(Storage)!=="undefined") {
+   document.getElementById("output").innerHTML = localStorage.mytim ;
+  }
+ /* else{
+document.getElementById("output").innerHTML = 0;
+*/
+</script>
+
+<script>
+   if(typeof(Storage)!=="undefined") {
+   document.getElementById("carte").innerHTML = localStorage.ytim ;
+  }
+ /* else{
+document.getElementById("carte").innerHTML = "idh";
+  }*/
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="functions.js" ></script>
+<script type="text/javascript" src="basket.js"></script>
+</body>
+</html>

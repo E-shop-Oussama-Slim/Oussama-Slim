@@ -1,0 +1,66 @@
+#showCarte
+{
+	float: right;
+}
+#basket
+{
+    float: right;
+}
+#output
+{
+    float: right;
+}
+.baskets
+{
+		float: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  padding-left: 50px;
+  display: inline-flex;
+  
+}
+.io {
+    margin-right: 60px;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.io:hover {
+  background-color: RoyalBlue;
+}
+#carte {
+	float: right;
+	width: 500px;
+	padding-right: 0px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+
+.topBar {
+	display: grid;
+}
+
+h1{
+	
+    text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+body{
+ 
+  background-image: url("https://c.pshere.com/photos/30/a0/assorted_blurred_background_boutique_business_close_up_clothes_clothes_hanger_clothing-1000427.jpg!d");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
