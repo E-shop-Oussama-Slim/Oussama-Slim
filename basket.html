@@ -2,18 +2,57 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="basket.css">
-	<title></title>
+
+
+
+  <title></title>
 </head>
-<body>
-<input  type="submit" id="home" value="home" >
-<input  type="submit" id="return" value="return" >
+ <body>
+  <header class="topBar">
+    <ul>
+
+    <button class="io" type="submit" id="home"  ><i class="fa fa-home"></i>Home</button>
+   </ul>
+      <div class="baskets">
+    <button class="io" id="cancel" onclick="reset();del();createItem(); cretItem();"><i class="fa fa-close"></i></button>
+    <output class="io" id="output">0</output>
+    <button class="io" id="showCarte" onclick="display();"><i class="fa fa-folder"></i></button>
+    
+  </div>
+<!------------------------------------------------------------>
+<aside id="carte"> </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------>
+
+   
+  </header>
+
+
+
     <div class="payement">
 <input type="text" placeholder="First name" id="first"><br>
 <input type="text" placeholder="Last name" id="last"><br>
-<input type="text" placeholder="Adress" id="adress">
+<input type="text" placeholder="Adress" id="adress"><br>
 <input list="states" placeholder="State" id="state">
   <datalist id="states">
-  	<option value="Ariana">
+    <option value="Ariana">
     <option value="Beja">
     <option value="Ben Arous">
     <option value="Bizerte">
@@ -40,18 +79,34 @@
   </datalist><br>
 <input type="tel"  placeholder="Phone number" id="phone"><br>
 <input type="email" placeholder="email" id="email"><br>
-<input type="button" value="Buy" onclick = "empty(); ph(); email();">
-<input type="button" value="Cancel" onclick="reset()" >
+<button class="io" type="button" value="Buy" onclick = "empty(); ph(); email(); sendEmail();">Buy</button>
+
 </div>
+​
+​<script>
+   if(typeof(Storage)!=="undefined") {
+   document.getElementById("output").innerHTML = localStorage.mytim ;
+  }
+ /* else{
+document.getElementById("output").innerHTML = 0;
+*/
+</script>
 
-
-
-
-
-
-
-
+<script>
+   if(typeof(Storage)!=="undefined") {
+   document.getElementById("carte").innerHTML = localStorage.ytim ;
+  }
+ /* else{
+document.getElementById("carte").innerHTML = "idh";
+  }*/
+</script>
+​
+​
+​
+​
+​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="basket.js"></script>
+<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>
